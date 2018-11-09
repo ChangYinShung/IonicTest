@@ -29,7 +29,22 @@ keytool -v -genkey -v -keystore further.keystore -alias further -keyalg RSA -val
 ```
 2.將 further.keystore 放在 專案根目錄  
 3 在專案根目錄建立 build.json 檔
-
+``` json
+{
+    "android": {
+        "release": {
+            "keystore": "./further.keystore",
+            "storePassword": "xxxxxx",
+            "alias": "further",
+            "password" : "xxxxx",
+        }
+    }
+}
+```
+3.重新執行指令
+``` javascript
+ionic cordova build android --release
+```
 
 
 
