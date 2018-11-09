@@ -3,7 +3,7 @@
 2. [Git](https://git-scm.com/)  
 3. [JAVA SDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 3. 建議安裝[Android Studio](https://developer.android.com/studio/#downloads) 不用設定環境變數和指令
-4. npm install -g ionic @angular/cli   (目前用Ionic4,專案結構與 angular cli 相同)  
+4. npm install -g ionic @angular/cli cordova   (目前用Ionic4,專案結構與 angular cli 相同)  
 
 # 確認事項
 1.npm  
