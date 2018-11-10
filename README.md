@@ -8,8 +8,8 @@
 # 確認事項
 1.npm  
 2.git  
-3.java (環境變數)
-4.android sdk 安裝建議從 android sdk 19  已上
+3.java (環境變數)  
+4.android sdk 安裝建議從 android sdk 19  以上版本
 
 # ionic
 ``` javascript
