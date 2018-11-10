@@ -41,7 +41,7 @@ keytool -v -genkey -v -keystore further.keystore -alias further -keyalg RSA -val
     }
 }
 ```
-3.重新執行指令
+3.重新執行指令 會產生
 ``` javascript
 ionic cordova build android --release
 ```
