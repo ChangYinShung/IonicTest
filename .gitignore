@@ -320,6 +320,7 @@ OpenCover/
 # Azure Stream Analytics local run output 
 ASALocalRun/
 
+
 # MSBuild Binary and Structured Log
 *.binlog
 
@@ -328,3 +329,4 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+*.vscode

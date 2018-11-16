@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    NKUST Sample - 資料從資料庫載入
+  </ion-item>
+  <ion-item>
+    <ion-label>產品資訊({{optionDatas?.length || '0'}})</ion-label>
+    <ion-select [(ngModel)]="selectedData" ok-text="選取" cancel-text="取消" *ngIf="optionDatas" >
+      <ion-select-option [value]="item" *ngFor="let item of optionDatas">{{item.title}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-button (click)="deleteProdcut(selectedData)">刪除</ion-button>
+    
+  </ion-item>
+
+
+  <ion-list>
+    <ion-item>
+      建立 Products 範例
+    </ion-item>
+    <ion-item>
+      <ion-label>產品名稱</ion-label>
+      <ion-input clearInput placeholder="產品名稱" [(ngModel)]="createModel.title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>產品代碼</ion-label>
+      <ion-input clearInput placeholder="代碼" [(ngModel)]="createModel.productCode"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-textarea placeholder="產品描述..." [(ngModel)]="createModel.description"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="createProduct()">建立</ion-button>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
