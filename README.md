@@ -16,6 +16,9 @@
 ionic start myAPP --type=angular 
 cd myApp  
 ionic serve -l  
+
+
+//以下建置android
 ionic cordova platform add android
 ionic cordova build android (debug版APK 無法上架到goole play)
 ```
